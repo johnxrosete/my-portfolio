@@ -1,0 +1,197 @@
+/* Global styling and css function are located here */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Padding of a container */
+.p-container {
+  padding: 80px 60px;
+}
+
+/* To wrap all content side by side */
+.global-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: #242424;
+}
+
+#welc-container {
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+}
+#welc-container .header-container {
+  padding: 20px 60px;
+}
+#welc-container .header-container .global-wrapper {
+  align-items: center;
+}
+#welc-container .header-container .global-wrapper .logo-container {
+  width: 20%;
+}
+#welc-container .header-container .global-wrapper .logo-container .my-logo {
+  color: #f4f4f4;
+  font-family: "Mulish", sans-serif;
+  font-size: 2.8em;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: lowercase;
+  letter-spacing: 0.3em;
+  word-wrap: break-word;
+}
+#welc-container .header-container .global-wrapper .nav-container {
+  width: 80%;
+}
+#welc-container .header-container .global-wrapper .nav-container .navbar {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+#welc-container .header-container .global-wrapper .nav-container .navbar .nav-item a {
+  position: relative;
+  color: #aaa;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+  padding: 10px 0;
+  margin-left: 40px;
+  transition: all 0.3s ease-in-out;
+}
+#welc-container .header-container .global-wrapper .nav-container .navbar .nav-item a:after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  content: "";
+  height: 1px;
+  width: 0;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#welc-container .header-container .global-wrapper .nav-container .navbar .nav-item a:hover {
+  color: #fff;
+}
+#welc-container .header-container .global-wrapper .nav-container .navbar .nav-item a:hover:after {
+  width: 50%;
+}
+#welc-container .header-container .global-wrapper .nav-container .navbar .nav-item .l-active {
+  color: #fff;
+}
+#welc-container .header-container .global-wrapper .nav-container .navbar .nav-item .l-active:after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  content: "";
+  height: 1px;
+  width: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#welc-container .kv-container {
+  height: 800px;
+  position: relative;
+}
+#welc-container .kv-container .hello-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #aaa;
+  font-size: 25vw;
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 30px;
+  opacity: 5%;
+  /* Prevent copying text in web-page */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#welc-container .kv-container .welc-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+#welc-container .kv-container .welc-container .kv-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  word-wrap: break-word;
+  letter-spacing: 5px;
+}
+#welc-container .kv-container .welc-container .kv-title span {
+  margin: 0 5px;
+}
+#welc-container .kv-container .welc-container .kv-content {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  word-spacing: 15px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 15px auto 0;
+  letter-spacing: 0.15em;
+  -webkit-animation: typing 3.5s steps(30, end) 1s 1 normal both, border-blink 0.5s step-end infinite;
+          animation: typing 3.5s steps(30, end) 1s 1 normal both, border-blink 0.5s step-end infinite;
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-blink {
+  from, to {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+@keyframes border-blink {
+  from, to {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    border-color: #fff;
+  }
+}/*# sourceMappingURL=main.css.map */

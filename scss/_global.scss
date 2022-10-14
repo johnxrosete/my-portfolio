@@ -1,0 +1,19 @@
+/* Global styling and css function are located here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Padding of a container */
+.p-container {
+    padding: 80px 60px;
+}
+
+/* To wrap all content side by side */
+.global-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
