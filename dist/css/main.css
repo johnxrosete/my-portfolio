@@ -184,7 +184,7 @@ body {
     border-color: rgba(255, 255, 255, 0.2);
   }
   50% {
-    border-color: #fff;
+    border-color: #ccc;
   }
 }
 @keyframes border-blink {
@@ -192,6 +192,6 @@ body {
     border-color: rgba(255, 255, 255, 0.2);
   }
   50% {
-    border-color: #fff;
+    border-color: #ccc;
   }
 }/*# sourceMappingURL=main.css.map */
