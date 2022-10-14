@@ -126,7 +126,7 @@ body {
   -o-user-select: none;
   user-select: none;
 }
-#welc-container .kv-container .welc-container {
+#welc-container .kv-container .welc-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -137,7 +137,7 @@ body {
   /* The typing effect */
   /* The typewriter cursor effect */
 }
-#welc-container .kv-container .welc-container .kv-title {
+#welc-container .kv-container .welc-text .kv-title {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -147,10 +147,10 @@ body {
   word-wrap: break-word;
   letter-spacing: 5px;
 }
-#welc-container .kv-container .welc-container .kv-title span {
+#welc-container .kv-container .welc-text .kv-title span {
   margin: 0 5px;
 }
-#welc-container .kv-container .welc-container .kv-content {
+#welc-container .kv-container .welc-text .kv-content {
   font-family: "Work Sans", sans-serif;
   font-size: 1.8em;
   font-weight: 400;
